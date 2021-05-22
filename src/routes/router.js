@@ -3,6 +3,6 @@ import Notes from '../controllers/Notes.js';
 
 const router = Router();
 
-router.get('/notes', Notes.getAll);
+router.get('/', Notes.getAll);
 
 export default router;

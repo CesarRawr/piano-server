@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/', router);
+app.use('/notes', router);
 
 client.subscribe("IDKWhatImDoingHere", { qos:1 });
 
