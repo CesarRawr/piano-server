@@ -1,0 +1,19 @@
+{
+  "name": "pianoserver",
+  "version": "0.0.1",
+  "description": "mqtt/ws server for piano",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cesar_rwr",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mqtt": "^4.2.6"
+  }
+}
