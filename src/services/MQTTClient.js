@@ -7,6 +7,7 @@ const client = mqtt.connect('mqtt://broker.emqx.io', {
 
 client.on('message', (topic, message, packet) => {
 	const note = JSON.parse(message);
+	// Looking for type
 	if (!!(note.type) === false) {
 		Notes.addNote(note);
 	}
