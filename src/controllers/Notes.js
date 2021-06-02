@@ -15,6 +15,16 @@ let Notes = ({
 			assert.equal(null, err);
 			console.log(r.insertedCount);
 		});
+	},
+	removeAll: (req, res, next) => {
+		collection.deleteMany({}, (err) => {
+			assert.equal(null, err);
+			console.log('eliminar');
+			res.status(200).json({
+				sucess: true,
+				msg: 'deleted'
+			});
+		});
 	}
 });
 
